@@ -2,7 +2,7 @@
 {
     public class LocalizedResources
     {
-        private static readonly AppResources _resources;
+        private static readonly AppResources _resources = new AppResources();
 
         public static AppResources Resources
         {

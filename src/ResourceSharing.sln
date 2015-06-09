@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceSharing.Mac", "ResourceSharing.Mac\ResourceSharing.Mac.csproj", "{16CB6FB7-6BFA-4883-AABE-648084EE1A6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceSharing.Localization", "ResourceSharing.Localization\ResourceSharing.Localization.csproj", "{9490F916-BC93-45C3-A1E2-A93A8884EA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceSharing.Windows", "ResourceSharing.Windows\ResourceSharing.Windows.csproj", "{792DDEC4-65CD-4CBF-8AD0-A5730F976FD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +23,12 @@ Global
 		{9490F916-BC93-45C3-A1E2-A93A8884EA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9490F916-BC93-45C3-A1E2-A93A8884EA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9490F916-BC93-45C3-A1E2-A93A8884EA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792DDEC4-65CD-4CBF-8AD0-A5730F976FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792DDEC4-65CD-4CBF-8AD0-A5730F976FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792DDEC4-65CD-4CBF-8AD0-A5730F976FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792DDEC4-65CD-4CBF-8AD0-A5730F976FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
