@@ -1,7 +1,7 @@
 ﻿using System;
-
 using Foundation;
 using AppKit;
+using ResourceSharing.Localization;
 
 namespace ResourceSharing.Mac
 {
@@ -21,6 +21,8 @@ namespace ResourceSharing.Mac
         public override void AwakeFromNib()
         {
             base.AwakeFromNib();
+
+            HelloWorldLabel.StringValue = AppResources.HelloWorld;
         }
     }
 }

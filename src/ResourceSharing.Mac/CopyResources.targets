@@ -1,0 +1,18 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup>
+	<MonoBundlePath>$(OutputPath)\ResourceSharing.Mac.app\Contents\MonoBundle</MonoBundlePath>
+</PropertyGroup>
+<ItemGroup>
+  <GermanResource Include="$(OutputPath)\de\*.*" />
+  <EnglishResource Include="$(OutputPath)\en\*.*" />
+  <FrenchResource Include="$(OutputPath)\fr\*.*" />
+  <ItalianResource Include="$(OutputPath)\it\*.*" />
+</ItemGroup>
+<Target Name="AfterBuild">
+  <Message Text="Copy resource satellite assemblies to $(MonoBundlePath)." Importance="normal"/>
+  <Copy SourceFiles="@(GermanResource)" DestinationFolder="$(MonoBundlePath)\de\%(RecursiveDir)" />
+  <Copy SourceFiles="@(EnglishResource)" DestinationFolder="$(MonoBundlePath)\en\%(RecursiveDir)" />
+  <Copy SourceFiles="@(FrenchResource)" DestinationFolder="$(MonoBundlePath)\fr\%(RecursiveDir)" />
+  <Copy SourceFiles="@(ItalianResource)" DestinationFolder="$(MonoBundlePath)\it\%(RecursiveDir)" />
+</Target>
+</Project>
