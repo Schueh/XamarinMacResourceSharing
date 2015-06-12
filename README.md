@@ -1,2 +1,2 @@
 # XamarinMacResourceSharing
-Sample for sharing localization resources between a Mac und Windows application
+Simple example of how to share localization resources (*.resx) between a Xamarin.Mac and Windows application
